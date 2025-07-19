@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más agradable */
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* Para compatibilidad con Safari */
+  cursor: pointer; /* <-- Para que parezca clickeable */
+  max-width: 80%;
+}
+
+.card #mensaje {
+  transition: opacity 0.3s ease-in-out; /* <-- Para el efecto de fundido */
+}
